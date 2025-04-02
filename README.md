@@ -46,15 +46,21 @@ good 이미지와 마스크는 반드시 이미지 이름에 good이 포함되�
 make_good_mask.py를 실행하면 자동으로 good 이미지의 사이즈를 읽어 마스크를 생성합니다.
 root directory와 mask directory를 자신의 경로에 맞게 수정하십시오.
 
-`python make_good_mask.py
+```
+python make_good_mask.py
+```
 
 ## Train
 base dir과 class names, weight path를 당신의 디렉토리 위치에 맞게 수정하십시오
-`python train_focal.py
+```
+python train_focal.py
+```
 
 ## Test
 base dir과 class names, weight path, 그리고 output dir를 당신의 디렉토리 위치에 맞게 수정하십시오
-`python test_heatmap_with_mask.py
+```
+python test_heatmap_with_mask.py
+```
 ![Example Image](flip_001.png)
 
 코드를 실행하면 위와 같은 테스트 결과가 output dir에 저장됩니다.
@@ -62,4 +68,6 @@ base dir과 class names, weight path, 그리고 output dir를 당신의 디렉�
 
 실제 이 모델을 사용해 이상탐지를 할 경우 테스트 데이터셋에는 mask가 필요 없을 수 있습니다.
 mask 없이 모델의 출력만 시각화 하고 싶다면 다음 코드를 실행하십시오.
-`python test_heatmap_only_image.py
+```
+python test_heatmap_only_image.py
+```
