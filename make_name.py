@@ -28,6 +28,3 @@ if __name__ == "__main__":
     copy_and_rename_images(source_directory, destination_directory)
     
     
-    
-    
-    # 0에서 1, 3에서 12, 25에서 28, 33에서 34, 37에서 40, 44에서 45, 48에서49, 52에서 54, 58에서 59, 63에서 65, 71에서 75
